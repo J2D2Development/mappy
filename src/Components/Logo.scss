@@ -1,0 +1,26 @@
+  svg {
+    opacity: 1;
+    border-radius: 100%;
+  }
+  .path-0 {
+    stroke: #64a8df;
+    stroke-dasharray: 320;
+    stroke-dashoffset: 320;
+    fill: transparent;
+    animation: stroke-in 1.5s ease-in, 1.5s color-in 1.5s ease-in;
+    animation-fill-mode: forwards;
+    fill: transparent;
+    stroke-width: 10;
+    stroke-linecap: round;
+  }
+  .arc-0 {
+    fill: transparent;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+    animation: stroke-in 1.5s ease-in, 1.5s color-in 1.5s ease-in;
+    animation-fill-mode: forwards;
+    stroke: #64a8df;
+    stroke-width: 10;
+    transform-origin: center;
+    transform: rotate(-90deg);
+  }

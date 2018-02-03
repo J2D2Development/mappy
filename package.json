@@ -1,0 +1,28 @@
+{
+  "name": "mappy",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "flow-bin": "^0.57.2",
+    "font-awesome": "^4.7.0",
+    "mapbox-gl": "^0.41.0",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.14",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "build": "yarn run build-css && react-scripts build",
+    "build-css": "node-sass src/ -o src/",
+    "eject": "react-scripts eject",
+    "flow": "flow",
+    "start": "npm-run-all -p watch-css start:js",
+    "start:js": "react-scripts start",
+    "test": "react-scripts test --env=jsdom",
+    "watch-css": "yarn run build-css && node-sass src/ -o src/ --watch --recursive"
+  }
+}

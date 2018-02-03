@@ -1,0 +1,33 @@
+.map-wrapper { 
+    flex: 1 1 auto;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+.map-overlay {
+    align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    color: hsl(360, 90%, 90%);
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 200;
+    height: 100vh;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;    
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
